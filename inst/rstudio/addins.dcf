@@ -1,46 +1,46 @@
-Name: Translation into English : deepRstudio
+Name: Translation into English
 Description: Translate into English via DeepL API
 Binding: deepel_rstudioapi_2EN
-Interactive: true
+Interactive: false
 
-Name: Translation into Chinese : deepRstudio
-Description: Translate into Chinese via DeepL API
-Binding: deepel_rstudioapi_2ZH
-Interactive: true
-
-Name: Translation into Spanish : deepRstudio
-Description: Translate into Spanish via DeepL API
-Binding: deepel_rstudioapi_2ES
-Interactive: true
-
-Name: Translation into French : deepRstudio
-Description: Translate into French via DeepL API
-Binding: deepel_rstudioapi_2FR
-Interactive: true
-
-Name: Translation into Russian : deepRstudio
-Description: Translate into Russian via DeepL API
-Binding: deepel_rstudioapi_2RU
-Interactive: true
-
-Name: Translation into Portuguese : deepRstudio
-Description: Translate into Portuguese via DeepL API
-Binding: deepel_rstudioapi_2PT
-Interactive: true
-
-Name: Translation into Indonesian : deepRstudio
-Description: Translate into Indonesian via DeepL API
-Binding: deepel_rstudioapi_2ID
-Interactive: true
-
-Name: Translation into Japanese : deepRstudio
+Name: Translation into Japanese
 Description: Translate into Japanese via DeepL API
 Binding: deepel_rstudioapi_2JA
-Interactive: true
+Interactive: false
 
-Name: Translation and Speak in Japanese : deepRstudio
+Name: Translation into Chinese
+Description: Translate into Chinese via DeepL API
+Binding: deepel_rstudioapi_2ZH
+Interactive: false
+
+Name: Translation into Spanish
+Description: Translate into Spanish via DeepL API
+Binding: deepel_rstudioapi_2ES
+Interactive: false
+
+Name: Translation into French
+Description: Translate into French via DeepL API
+Binding: deepel_rstudioapi_2FR
+Interactive: false
+
+Name: Translation into Russian
+Description: Translate into Russian via DeepL API
+Binding: deepel_rstudioapi_2RU
+Interactive: false
+
+Name: Translation into Portuguese
+Description: Translate into Portuguese via DeepL API
+Binding: deepel_rstudioapi_2PT
+Interactive: false
+
+Name: Translation into Indonesian
+Description: Translate into Indonesian via DeepL API
+Binding: deepel_rstudioapi_2ID
+Interactive: false
+
+Name: Translation and Speak in Japanese
 Description: Translation into Japanese and Speak in Japanese via DeepL API on MacOS
 Binding: deepel_rstudioapi_speakInJA
-Interactive: true
+Interactive: false
 
 

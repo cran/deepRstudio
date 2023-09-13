@@ -3,6 +3,11 @@
 <!-- badges: start -->
 [![Lifecycle:
 maturing](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![CRAN](https://www.r-pkg.org/badges/version/deepRstudio)]( https://CRAN.R-project.org/package=deepRstudio)
+[![CRAN_latest_release_date](https://www.r-pkg.org/badges/last-release/deepRstudio)](https://cran.r-project.org/package=deepRstudio)
+[![CRAN](https://cranlogs.r-pkg.org/badges/grand-total/deepRstudio)](https://www.datasciencemeta.com/rpackages)
+[![:total status badge](https://kumes.r-universe.dev/badges/:total)](https://kumes.r-universe.dev)
+[![deepRstudio status badge](https://kumes.r-universe.dev/badges/deepRstudio)](https://kumes.r-universe.dev)
 <!-- badges: end -->
 
 [GitHub/deepRstudio](https://github.com/kumeS/deepRstudio)
@@ -11,7 +16,7 @@ maturing](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https
 
 Enhancing cross-language compatibility within the RStudio environment and supporting seamless language understanding, 
 the deepRstudio package leverages the power of the 'DeepL' API 
-<see https://www.deepl.com/docs-api> to enable seamless, fast, accurate, and affordable translation of code comments, documents, and text. 
+(see <https://www.deepl.com/docs-api>) to enable seamless, fast, accurate, and affordable translation of code comments, documents, and text. 
 This package offers the ability to translate selected text into English, 
 as well as from English (EN) into various languages, namely Japanese (JA), Chinese (ZH), Spanish (ES), 
 French (FR), Russian (RU), Portuguese (PT), and Indonesian (ID). 
@@ -26,6 +31,15 @@ The functionality of this package works only on RStudio using rstudioapi.
 
 DeepL API Docs : [https://www.deepl.com/docs-api](https://www.deepl.com/docs-api)
 
+**To obtain your DeepL API key, you must register for an account at the DeepL website. 
+You can register for a free account. This package is built for use with the free version of the Web API.**
+
+## Demo video
+
+- [deepRstudio demo v1 on YouTube](https://youtu.be/fMtxS6zK25A)
+
+- [deepRstudio demo v2 on YouTube (02-SEP-2023)](https://youtu.be/-aDXhduiXDI?si=NJ9pFp52eh7Xr4QX)
+
 ## Installation of the deepRstudio package
 
 ### 1. Start R / RStudio console.
@@ -35,21 +49,46 @@ DeepL API Docs : [https://www.deepl.com/docs-api](https://www.deepl.com/docs-api
 #### CRAN-version installation
 
 ```r
-# CRAN-version installation (Not yet)
+# CRAN-version installation
 install.packages("deepRstudio")
 library(deepRstudio)
 ```
 
-#### Dev-version installation (Recommended)
+Note: Once restart R (Restart R on the Session or .rs.restartR()) is recommended.
+
+#### Dev-version installation
 
 ```r
-devtools::install_github("kumeS/deepRstudio")
+#v0.0.5
+devtools::install_github("kumeS/deepRstudio", ref = "v0.0.5")
 library(deepRstudio)
 ```
 
+Note: Once restart R (Restart R on the Session or .rs.restartR()) is recommended.
+
 ### 3. Set the API key according to DeepL Web API.
 
-Please register for a membership (either free or paid) on the DeepL website (https://www.deepl.com/ja/docs-api) to obtain your API key.
+Please register for a membership (either free or paid) on the DeepL website (https://www.deepl.com/docs-api) to obtain your API key.
+
+**Step 1:** log in to the DeepL website.
+
+<div align="center">
+<img src="inst/figures/Account_01.png" alt="GitHub Logo1" width="600"/>
+</div>
+
+**Step 2:** click on the Account item.
+
+<div align="center">
+<img src="inst/figures/Account_02.png" alt="GitHub Logo2" width="350"/>
+</div>
+
+**Step 3:** Scroll down in the Account section and you will see your DeepL API key.
+
+<div align="center">
+<img src="inst/figures/Account_03.png" alt="GitHub Logo3" width="600"/>
+</div>
+
+**Note: DeepL API Free plan offers free translation of up to 500,000 words/characters per month.**
 
 ```r
 # Set your key for the DeepL API
@@ -68,11 +107,13 @@ system(paste("open ~/.Rprofile"))
 
 Note: Please be aware of newline character inconsistencies across different operating systems.
 
-## Demo video
+Here is an example of `.Rprofile` configuration.
 
-- [deepRstudio demo on YouTube](https://youtu.be/fMtxS6zK25A)
+<div align="center">
+<img src="inst/figures/Account_04.png" alt="GitHub Logo1" width="500"/>
+</div>
 
-## Functions for DeepL API
+## Functions in deepRstudio
 
 |Function|Description|Script|
 |:---|:---|:---:|
